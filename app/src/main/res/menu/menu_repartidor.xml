@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/notificacion"
+        android:icon="@drawable/ic_notify"
+        android:title="Pedidos en espera" />
+
+    <item android:id="@+id/menu_profile"
+        android:title="Perfil"
+        android:icon="@mipmap/ic_profile"></item>
+
+</menu>

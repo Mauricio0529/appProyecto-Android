@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Domilaap</string>
+    <string name="txt_marca">DOMILAPP</string>
+    <string name="txt_Email">Email</string>
+    <string name="txt_Pass">Contraseña</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_registrar">Registrarse</string>
+    <string name="titulo_registro">Registrate</string>
+    <string name="txt_nombre">Nombre(s)</string>
+    <string name="txt_apellido">Apellido(s)</string>
+    <string name="btn_crearCuenta">Crear Cuenta</string>
+    <string name="otras_opciones">Otas opciones</string>
+    <string name="btn_cerrarSesion">Cerrar Sesion</string>
+    <string name="btn_salir">Salir</string>
+    <string name="perfil">Mi perfil</string>
+    <string name="nombre">Su pedido ha sido solicitado correctamente</string>
+    <string name="titulo_positive">Finalizado</string>
+    <string name="nombreproducto">%1$s</string>
+    <string name="precioproducto">%1$s</string>
+    <string name="facebook_app_id">2596589533988351</string>
+    <string name="fb_login_protocol_scheme">fb2596589533988351</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_repartidor">Repartidor</string>
+
+</resources>

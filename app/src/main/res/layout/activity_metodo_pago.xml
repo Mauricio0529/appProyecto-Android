@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MetodoPago.MetodoPago"
+    android:background="#F3F0F0">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/color_tolbar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:titleTextColor="@android:color/black">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignStart="@+id/toolbar"
+        android:layout_alignLeft="@+id/toolbar"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:foreground="?selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/ts"
+        android:layout_width="343dp"
+        android:layout_height="53dp"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/imageButton"
+        android:layout_toRightOf="@+id/imageButton"
+        android:gravity="center|left"
+        android:paddingLeft="15dp"
+        android:text="Metodo de pago"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+ <!--   <RadioGroup
+        android:id="@+id/RadioGrup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp">
+
+
+    </RadioGroup>
+    -->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCheck"
+        android:layout_width="410dp"
+        android:layout_height="79dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="5dp"
+        android:animateLayoutChanges="true"
+        android:foreground="?selectableItemBackground"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imgRestaurante"
+                android:layout_width="104dp"
+                android:layout_height="66dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/dinero" />
+
+            <RadioButton
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/color_tolbar"
+                android:checked="false"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvnombreProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="17dp"
+                android:layout_toEndOf="@+id/imgRestaurante"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Efectivo"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnMetodoPago"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardCheck"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/item_perfil"
+        android:text="Seleccionar"
+        android:textColor="@android:color/white"
+        android:foreground="?selectableItemBackground"
+        android:textStyle="bold"></Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".Listar_repartidor.Repartidor">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/color_tolbar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:titleTextColor="@android:color/black">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignStart="@+id/toolbar"
+        android:layout_alignLeft="@+id/toolbar"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:foreground="?selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/ts"
+        android:layout_width="343dp"
+        android:layout_height="53dp"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="0dp"
+        android:paddingLeft="15dp"
+        android:layout_toEndOf="@+id/imageButton"
+        android:layout_toRightOf="@+id/imageButton"
+        android:gravity="center|left"
+        android:text="Productos"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recicleRepartidor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="73dp"
+        android:layout_height="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginBottom="276dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="386dp"
+        android:layout_height="582dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        app:shimmer_auto_start="true">
+
+        <LinearLayout
+            android:id="@+id/lyLoading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_loading" />
+            <include layout="@layout/view_loading" />
+            <include layout="@layout/view_loading" />
+            <include layout="@layout/view_loading" />
+            <include layout="@layout/view_loading" />
+            <include layout="@layout/view_loading" />
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>

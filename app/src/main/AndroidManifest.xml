@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.domilaap">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".factura.Factura"></activity>
+        <activity android:name=".ListarCarroCompra.VerCarrito" />
+        <activity android:name=".Historial_Usuario.Historial_usuario" />
+        <activity android:name=".MetodoPago.MetodoPago" />
+        <activity android:name=".Menu_home.Farmacias.categoriaFarmacia.Categoria_Farmacia" />
+        <activity android:name=".Menu_home.Canasta_Familiar.ListarProductos.Aceites.Aceites" />
+        <activity android:name=".Repartidor.Menu_repartidor.Repartidor_menu" />
+        <activity android:name=".Repartidor.Registro_repartidor" />
+        <activity android:name=".Repartidor.Login_repartidor" />
+        <activity android:name=".Opcion_Usuario.Opcion_usuario" />
+        <activity android:name=".mensajeria.Chat" />
+        <activity android:name=".Detalle_pedido.DetallePedido" />
+        <activity android:name=".Listar_repartidor.Repartidor" />
+        <activity android:name=".Menu_home.Canasta_Familiar.ListarProductos.ListaProducto" />
+        <activity android:name=".Menu_home.AlmacenesCadena.Categorias.Almacen_categorias" />
+        <activity android:name=".VisualizarProductos.VerProductos" />
+        <activity android:name=".Menu_home.Farmacias.Farmacias" />
+        <activity android:name=".Menu_home.Restaurantes.Restaurantes" />
+        <activity android:name=".Menu_home.AlmacenesCadena.AlmacenesCadena" />
+        <activity android:name=".Menu_home.Canasta_Familiar.Canasta_familiar" />
+        <activity android:name=".Registro" />
+        <activity android:name=".Menu" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Opcion_Login" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

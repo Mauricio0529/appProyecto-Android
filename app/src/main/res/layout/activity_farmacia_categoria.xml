@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context=".Menu_home.Farmacias.categoriaFarmacia.Categoria_Farmacia">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/color_tolbar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:titleTextColor="@android:color/black">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignStart="@+id/toolbar"
+        android:layout_alignLeft="@+id/toolbar"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:foreground="?selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/ts"
+        android:layout_width="343dp"
+        android:layout_height="53dp"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="0dp"
+        android:paddingLeft="15dp"
+        android:layout_toEndOf="@+id/imageButton"
+        android:layout_toRightOf="@+id/imageButton"
+        android:gravity="center|left"
+        android:text="Productos"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <!--  <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="1"
+        android:background="#25C5D9"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:titleTextColor="@android:color/black"></androidx.appcompat.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="47dp"
+        android:layout_height="52dp"
+        android:layout_alignStart="@+id/toolbar"
+        android:layout_alignLeft="@+id/toolbar"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/boton_atras_sinborde"
+        android:foreground="?selectableItemBackground"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <TextView
+        android:id="@+id/ts"
+        android:layout_width="355dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toEndOf="@+id/imageButton"
+        android:layout_toRightOf="@+id/imageButton"
+        android:gravity="center|left"
+        android:text="Drogerias"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    -->
+
+    <LinearLayout
+        android:id="@+id/historial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="24dp"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!--          <ImageView
+                      android:layout_width="35dp"
+                      android:layout_height="35dp"
+                      android:layout_marginRight="14dp"
+                      android:background="@color/black"
+                      android:src="@drawable/ic_launcher_foreground"></ImageView>
+      -->
+        <TextView
+            android:id="@+id/pastas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/ Pastillas y capsulas"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp"
+            android:textStyle="italic">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18dp"
+            android:textStyle="italic">
+        </TextView>
+        <TextView
+            android:id="@+id/jarabe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jarabe"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp"
+            android:textStyle="italic">
+        </TextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recicleFarmacia"
+        android:layout_width="388dp"
+        android:layout_height="583dp"
+        android:layout_below="@+id/historial"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="65dp"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginBottom="278dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="386dp"
+        android:layout_height="582dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        app:shimmer_auto_start="false">
+
+        <LinearLayout
+            android:id="@+id/lyLoading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_loading" />
+            <include layout="@layout/view_loading" />
+            <include layout="@layout/view_loading" />
+            <include layout="@layout/view_loading" />
+            <include layout="@layout/view_loading" />
+            <include layout="@layout/view_loading" />
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>

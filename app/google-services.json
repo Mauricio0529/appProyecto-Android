@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "688940912632",
+    "firebase_url": "https://domilaap.firebaseio.com",
+    "project_id": "domilaap",
+    "storage_bucket": "domilaap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688940912632:android:5455c2df10e2f0414bd00d",
+        "android_client_info": {
+          "package_name": "com.example.domilaap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688940912632-cv66pbkf910ve5k32cb3qku4rt6l2r0m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.domilaap",
+            "certificate_hash": "49791c8d0be21a96fb793653f3d8d5be42ca5646"
+          }
+        },
+        {
+          "client_id": "688940912632-tq367s8ara3cl0rfomrfuf1gt1fv2v35.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.domilaap",
+            "certificate_hash": "aa899ab9fd33c36eaf7ba4e94ebd95198f391e0e"
+          }
+        },
+        {
+          "client_id": "688940912632-nbe1v80k8vdu0r1uh9pna8at3672u1ec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg0dKXQaW1EYe54acRNR-PKFiV612nTIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688940912632-nbe1v80k8vdu0r1uh9pna8at3672u1ec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
